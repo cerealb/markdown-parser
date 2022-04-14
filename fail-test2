@@ -5,3 +5,11 @@
 
 // PS C:\Users\annep\Downloads\markdown-parser-main\markdown-parser-main> java MarkdownParse fail-test2.md
 []
+
+//Fixed version
+#Title 
+
+[link](binkbonk.com)
+[link](asdfghjkl.com)
+// PS C:\Users\annep\Downloads\markdown-parser-main\markdown-parser-main> java MarkdownParse fail-test2.md
+[binkbonk.com, asdfghjkl.com]
