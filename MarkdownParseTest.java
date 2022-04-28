@@ -25,16 +25,7 @@ public class MarkdownParseTest {
         assertEquals(expected, links);
     }
 
-    @Test
-    public void testGetLinks1() throws IOException {
-        Path fileName = Path.of("new.md");
-        String content = Files.readString(fileName);
-        ArrayList<String> links = MarkdownParse.getLinks(content);
-        List<String> expected = List.of("https://something.com");
-
-        assertEquals(expected, links);
-    }
-
+    
     @Test
     public void testGetLinks2() throws IOException {
         Path fileName = Path.of("test-file2.md");
@@ -95,15 +86,7 @@ public class MarkdownParseTest {
         assertEquals(true, empty);
     }
 
-    @Test
-    public void testGetLinks8() throws IOException {
-        Path fileName = Path.of("test-file8.md");
-        String content = Files.readString(fileName);
-        ArrayList<String> links = MarkdownParse.getLinks(content);
-        boolean empty = links.isEmpty();
-
-        assertEquals(true, empty);
-    }
+   
 
     
 }
